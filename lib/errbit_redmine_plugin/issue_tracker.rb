@@ -75,9 +75,9 @@ module ErrbitRedminePlugin
     
     def self.icons
       @icons ||= {
-        create: [ 'image/png', asset_path('redmine_create.png') ],
-        goto: [ 'image/png', asset_path('redmine_goto.png') ],
-        inactive: [ 'image/png', asset_path('redmine_inactive.png') ],
+        create: [ 'image/png', '/home/ubuntu/www/e.venturit.com/errbit/static/redmine_create.png' ],
+        goto: [ 'image/png', '/home/ubuntu/www/e.venturit.com/errbit/static/redmine_goto.png' ],
+        inactive: [ 'image/png', '/home/ubuntu/www/e.venturit.com/errbit/static/redmine_inactive.png' ],
       }
     end
 
