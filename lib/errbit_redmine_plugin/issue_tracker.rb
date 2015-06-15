@@ -75,9 +75,9 @@ module ErrbitRedminePlugin
     
     def self.icons
       @icons ||= {
-        create: [ 'image/png', File.read('redmine_create.png') ],
-        goto: [ 'image/png', File.read('redmine_goto.png') ],
-        inactive: [ 'image/png', File.read('redmine_inactive.png') ],
+        create: [ 'image/png', File.read(File.join(self.root, 'static', 'redmine_create.png')) ],
+        goto: [ 'image/png', File.read(File.join(self.root, 'static', 'redmine_goto.png')) ],
+        inactive: [ 'image/png', File.read(File.join(self.root, 'static', 'redmine_inactive.png')) ],
       }
     end
 
