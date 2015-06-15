@@ -7,5 +7,7 @@ module ErrbitRedminePlugin
     File.expand_path '../..', __FILE__
   end
 end
-
+def self.read_static_file(file)
+    File.read(File.join(self.root, 'static', file))
+end
 ErrbitPlugin::Registry.add_issue_tracker(ErrbitRedminePlugin::IssueTracker)
