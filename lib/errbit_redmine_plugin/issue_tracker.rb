@@ -72,6 +72,20 @@ module ErrbitRedminePlugin
     def required_fields
       FIELDS.reject { |k,v| v[:optional] }.map { |f| f[0] }.map(&:intern)
     end
+    
+    def self.icons
+      @icons ||= {
+        create: [
+          'image/png', ErrbitRedminePlugin.read_static_file('redmine_create.png')
+        ],
+        goto: [
+          'image/png', ErrbitRedminePlugin.read_static_file('redmine_goto.png'),
+        ],
+        inactive: [
+          'image/png', ErrbitRedminePlugin.read_static_file('redmine_inactive.png'),
+        ]
+      }
+    end
 
     def errors
       errors = []
